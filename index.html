@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asset Panda UI Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!--  Navbar -->
+ <header class="navbar">
+  <div class="container">
+   <div class="logo">
+  <img src="https://www.assetpanda.com/wp-content/themes/e25-base-theme/dist/images/lap-panda.png" alt="Asset Panda Logo">
+  <span class="logo-text">Asset Panda</span>
+</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Products</a>
+      <a href="#">Solutions</a>
+      <a href="#">Industries</a>
+      <a href="#">Resources</a>
+      <a href="#">Pricing</a>
+      <button class="login-btn">Login</button>
+      <button class="btn-primary">Get a Demo</button>
+      <span class="contact-number">Sales: (888) 928-6112</span>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+</header>
+
+  <!-- 1.Hero Section -->
+
+  <section class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <p class="tagline">ASSET MANAGEMENT PLATFORM</p>
+      <h1 class="custom-heading">
+        <span>Get your assets under</span><br>
+        <span>control</span>
+      </h1>
+      <div class="custom-description">
+        <p>
+          <span>Never lose track of an item again with our cloud-based asset management and tracking platform that adapts to the way you work.</span> 
+        </p>
+      </div>
+
+      <div class="hero-buttons">
+        <button class="btn-primary">Get a Demo</button>
+        <button class="btn-asset">✨ Asset Panda Intelligence</button>
+      </div>
+      <p >(No Credit Card Required)</p>
+    </div>
+    <div class="hero-image">
+      <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2025/05/Get-your-assets-under-control_v2.png.webp" alt="Asset Control Preview">
+    </div>
+
+  </div>
+</section>
+
+  <!-- 2.Trust Section -->
+
+ <section class="trust">
+  <div class="container">
+    <h1>We Track and Manage Millions of Assets</h1>
+    <div class="logo-strip">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon Logo" />
+      <img src="data:image/png;base64,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" alt="Toyota Logo" />
+      <img src="https://images.seeklogo.com/logo-png/49/2/dyson-logo-png_seeklogo-498548.png" alt="Dyson Logo" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstqUQrG_vb6vKkuZQS9B7tExiXr0ryE_kPCyKVDWrm4PzH2d8pP4U2CayDi1B02Mo8g&usqp=CAU" alt="PennStack Logo">
+      <img src="data:image/png;base64,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" alt="Carnival Logo" />
+    </div>
+  </div>
+</section>
+
+  <!-- 3.Asset Section -->
+
+ <section class="about-asset">
+  <div class="about-wrapper">
+    <div class="image-container">
+      <img src="" alt="Mobile App UI" />
+    </div>
+    <div class="content">
+      <h2>What Exactly is an Asset?</h2>
+      <p>
+        The better question is, what isn’t an asset? From IT and construction to education and retail, every business has items of value that they need to keep track of. Some are digital, like contracts and software licenses, while others are physical, like laptops and vehicle fleets.
+      </p>
+      <p>
+        Whatever you’re tracking, we’re here to help your team improve efficiency and save time and money.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!--  4. Platform Benefits Section -->
+
+ <section class="platform-benefits">
+  <div class="benefits-wrapper">
+    
+    <div class="benefits-image">
+      <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2025/05/Track-everything-from-computers-to-contracts_v2-2.png.webp" alt="Track Everything Image">
+    </div>
+    
+    <div class="benefits-content">
+      <h2>Track Everything from Computers to Contracts</h2>
+      <p>
+        Your business is unique, and so is your stuff. That’s why we’ve made our web and mobile technology highly flexible to cater to your specific items and use cases – no need to change the way you work.
+      </p>
+      <p>
+        Better asset tracking leads to better business performance – when you keep your equipment in working order and know where it is, you prevent losses from damage or theft.
+      </p>
+      <button class="text-arrow-btn">Get a demo →</button>
+    </div>
+    
+  </div>
+</section>
+
+  <!-- 5. Steps Section -->
+
+<section class="steps">
+  <div class="steps-wrapper">
+    
+    <!-- Text Left -->
+    <div class="steps-content">
+      <h2>Smarter than the average spreadsheet</h2>
+      <p>Don’t waste time sifting through cluttered spreadsheets to track your items.</p>
+      <p>
+        With our asset tracking software, you’ll be able to see full action histories, 
+        warranty information, user manuals, and photos all in one consolidated place.
+      </p>
+      <button class="arrow-button">Get a demo →</button>
+    </div>
+
+    <!-- Image Right -->
+    <div class="steps-image">
+      <img 
+        src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2025/05/Smarter-than-the-average-spreadsheet_v2.png.webp" 
+        alt="Smarter Spreadsheet Illustration" />
+    </div>
+
+  </div>
+</section>
+
+  <!--  6.Business Benefits -->
+
+  <section class="benefits">
+  <div class="business-wrapper">
+    
+    <div class="business-image">
+      <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2025/05/Manage-everything-in-one-place-using-integrations_v2.png.webp" alt="Manage Integrations Image" />
+    </div>
+    
+    <div class="business-content">
+      <h2>Manage everything in one place using integrations</h2>
+      <p>
+        Create a single source of truth for your entire asset estate by incorporating Asset Panda into your tech stack.
+      </p>
+      <p>
+        Seamlessly sync data across your tech stack with one click and streamline workflows within the apps you use every day.
+      </p>
+      <button class="benefits-arrow-btn">Get a demo →</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- 7. Get Started Section -->
+
+   <section class="get-started">
+    <h2>Get up and running quickly with our team of experts</h2>
+
+    <div class="steps">
+     
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <h3>See Asset Panda in action</h3>
+        <img src="https://img.icons8.com/ios/100/000000/laptop-settings.png" alt="Demo Icon"/>
+        <p>Demo Asset Panda with one of our product experts, then try the platform free for 14 days (no credit card required!).</p>
+      </div>
+      
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <h3>Onboard your team and your assets</h3>
+        <img src="https://img.icons8.com/ios/100/000000/organization.png" alt="Onboard Icon"/>
+        <p>Our team of experts will get your program set up and provide comprehensive onboarding for your team on your timeline.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <h3>Access technical support at any time</h3>
+        <img src="https://img.icons8.com/ios/100/000000/combo-chart.png" alt="Support Icon"/>
+        <p>Once your program is up and running, don’t worry – you’re not alone! Access support via email 24/7 and get a response within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--8. Team- Section -->
+
+   <section class="team-section">
+  <div class="team-layout">
+    <div class="team-image">
+      <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2025/05/Get-your-entire-team-on-the-same-page_v2.png.webp" alt="Team Collaboration Image" />
+    </div>
+    <div class="team-content">
+      <h2>Get your entire team on the same page</h2>
+      <p>
+        From the boardroom to the stockroom, our software benefits your entire organization. 
+        With unlimited users, your executives can easily view reports, your managers can see asset 
+        history, and your front-line workers can manage assets on the move.
+      </p>
+      <button class="arrow-button">Get a demo →</button>
+    </div>
+  </div>
+</section>
+
+  <!-- 9.Save-Time -->
+
+   <section class="save-time-section">
+    <div class="content-wrapper">
+      <h1>Save time while reducing costs</h1>
+      <p>
+        Manually tracking your enterprise-wide assets means losing out on valuable time and resources. But when you implement our easy-to-use asset management platform, you'll improve efficiency across your organization, leading to time and cost savings.
+      </p>
+      <button class="demo-button">Get a Demo</button>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2025/04/experience-it-yourself.png.webp" alt="Dashboard Preview" />
+    </div>
+  </section>
+
+
+
+  <!---11.Every business--->
+
+  <!--12.Solutions for -->
+  
+  <section class="solutions-section">
+  <h1>Solutions for all your asset management needs</h1>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Asset_Tracking_Icon.svg" alt="Asset Tracking Icon" />
+      <h3>Asset Tracking</h3>
+      <p>Track your assets' location, status, and condition on the web or mobile.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Maintenance_Management_Icon.svg" alt="Maintenance Management Icon" />
+      <h3>Maintenance Management</h3>
+      <p>Manage maintenance tasks and assign work orders to boost efficiency and uptime.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Compliance_Management_Icon.svg" alt="Compliance Management Icon" />
+      <h3>Compliance Management</h3>
+      <p>Ensure compliance with standardized processes, signatures, and audit trails.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Barcode_Tracking_Icon-1.svg" alt="Barcode Tracking Icon" />
+      <h3>Barcode Tracking</h3>
+      <p>Print and scan asset barcodes via our app to save time and ensure accuracy.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Lifecycle_Management_Icon.svg" alt="Lifecycle Management Icon" />
+      <h3>Lifecycle Management</h3>
+      <p>Track asset history to optimize use, boost accountability, and cut costs.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Inventory_Management_Icon.svg" alt="Inventory Management Icon" />
+      <h3>Inventory Management</h3>
+      <p>Manage inventory with custom low-stock and downtime alerts.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Leased_Equioment_Tracking_Icon.svg" alt="Leased Equipment Tracking Icon" />
+      <h3>Leased Equipment Tracking</h3>
+      <p>Track leased equipment and contracts for timely renewals and smoother vendor relations.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Facilities_Management_Icon.svg" alt="Facilities Management Icon" />
+      <h3>Facilities Management</h3>
+      <p>Track maintenance, assets, and repairs to boost productivity and compliance.</p>
+    </div>
+  </div>
+ 
+  <div class="card-group center-two">
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Asset_Inspection_Icon-1.svg" alt="Asset Inspection Icon" />
+      <h3>Asset Inspection</h3>
+      <p>Create custom checklists and assign them to technicians for better scheduling.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.assetpanda.com/wp-content/uploads/2025/04/Mobile_Audit_Icon.svg" alt="Mobile Audit Icon" />
+      <h3>Mobile Audit</h3>
+      <p>Audit asset inventory with our mobile app and barcode tech for improved efficiency and accuracy.</p>
+    </div>
+  </div>
+
+  <button class="button">Get a demo</button>
+</section>
+
+<!--13.Blog- section -->
+
+<section class="blog-section">
+  <div class="container">
+    <h2 class="blog-heading">Learn more about what we’re up to lately</h2>
+    <div class="blog-cards">
+      <!-- Blog Card 1 -->
+      <div class="blog-card">
+        <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2023/07/2023-06_Benefits_of_an_ITAD_Plan_2_740x440px.png.webp" alt="Blog 1" />
+        <div class="blog-content">
+          <span class="blog-tag">Blog</span>
+          <h3 class="blog-title">5 Benefits of an IT Asset Disposition Plan</h3>
+          <p class="blog-desc">Discover the latest enhancements we've added to streamline your asset tracking workflows.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="blog-card">
+        <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2023/06/How_to-Make_the_Switch_from_Excel_Spreadsheets_to_Asset_Panda_Thumbnail_400x220px.png.webp" alt="Blog 2" />
+        <div class="blog-content">
+          <span class="blog-tag">Blog</span>
+          <h3 class="blog-title">How to Make the Switch from Excel Spreadsheets to Asset Panda</h3>
+          <p class="blog-desc">Stay ahead of the curve with the key trends shaping the future of asset tracking and IT infrastructure.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="blog-card">
+        <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2023/10/2023-10_Asset_Intelligence_Platform_Blog_740x440px.png.webp" alt="Blog 3" />
+        <div class="blog-content">
+          <span class="blog-tag">Blog</span>
+          <h3 class="blog-title">The Asset Intelligence Platform: Your Key to Unlocking Real-time Insights</h3>
+          <p class="blog-desc">See how top companies use Asset Panda to cut costs and improve accuracy across teams.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--14.Down section -->
+
+<section class="down-section">
+  <div class="down-wrapper">Save time while reducing costs
+
+    <h1>Learn more from an Asset Panda expert</h1>
+    <p>Get a FREE consultation with an asset tracking expert to find out how you can transform your asset tracking.</p>
+    <p>Contact our Sales Team at (888) 928-6112</p>
+    <button class="get-btn">Get a demo</button>
+  </div>
+
+  <div class="image-wrappers">
+    <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2025/01/AssetPanda_Footer_Screensots.png.webp" alt="Dashboard Preview" />
+  </div>
+</section>
+
+  <!-- 14.Footer -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-columns">
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li>Asset Panda®</li>
+            <li>Asset Panda Pro</li>
+            <li>Integrations</li>
+            <li>Asset Tags</li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li>Careers</li>
+            <li>Contact</li>
+            <li>Company</li>
+            <li>Technology</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li>Blog</li>
+            <li>Webinars</li>
+            <li>White Papers</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>GDPR Policy</li>
+            <li>Terms of Use</li>
+          </ul>
+        </div>
+        <div class="store-links">
+          <h4>Get the App</h4>
+          <img src="https://www.assetpanda.com/wp-content/uploads/2020/02/apple-store-logo.png" width="24" alt="App Store" />
+          <img src="https://www.assetpanda.com/wp-content/webp-express/webp-images/uploads/2020/02/google-play-store-logo.png.webp" width="24" alt="Google Play" />
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2024 Asset Panda Clone. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
